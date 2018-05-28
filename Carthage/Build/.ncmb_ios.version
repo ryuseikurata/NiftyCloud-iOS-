@@ -1,0 +1,9 @@
+{
+  "commitish" : "v2.4.3",
+  "iOS" : [
+    {
+      "name" : "NCMB",
+      "hash" : "647539f086b1febc3f89c1707e31bf0402b57065692f011f5e7b6a3aa649ceea"
+    }
+  ]
+}

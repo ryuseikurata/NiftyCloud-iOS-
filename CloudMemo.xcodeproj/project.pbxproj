@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B34450F20B96EE3005C0EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34450E20B96EE3005C0EF9 /* AppDelegate.swift */; };
+		3B34451420B96EE4005C0EF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B34451220B96EE4005C0EF9 /* Main.storyboard */; };
+		3B34451720B96EE4005C0EF9 /* CloudMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B34451520B96EE4005C0EF9 /* CloudMemo.xcdatamodeld */; };
+		3B34451920B96EE5005C0EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B34451820B96EE5005C0EF9 /* Assets.xcassets */; };
+		3B34451C20B96EE5005C0EF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B34451A20B96EE5005C0EF9 /* LaunchScreen.storyboard */; };
+		3B34452720B96EE6005C0EF9 /* CloudMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34452620B96EE6005C0EF9 /* CloudMemoTests.swift */; };
+		3B34453220B96EE6005C0EF9 /* CloudMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34453120B96EE6005C0EF9 /* CloudMemoUITests.swift */; };
+		3B34454120B96F9F005C0EF9 /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B34454020B96F9E005C0EF9 /* NCMB.framework */; };
+		3B34454420B970E8005C0EF9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34454320B970E8005C0EF9 /* ListViewController.swift */; };
+		3B34454620B970F6005C0EF9 /* AddMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34454520B970F6005C0EF9 /* AddMemoryViewController.swift */; };
+		3B34454820B970FE005C0EF9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34454720B970FE005C0EF9 /* DetailViewController.swift */; };
+		3B34454C20BB7B00005C0EF9 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B34454B20BB7B00005C0EF9 /* SVProgressHUD.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B34452320B96EE6005C0EF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B34450320B96EE3005C0EF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B34450A20B96EE3005C0EF9;
+			remoteInfo = CloudMemo;
+		};
+		3B34452E20B96EE6005C0EF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B34450320B96EE3005C0EF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B34450A20B96EE3005C0EF9;
+			remoteInfo = CloudMemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B34450B20B96EE3005C0EF9 /* CloudMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B34450E20B96EE3005C0EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B34451320B96EE4005C0EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B34451620B96EE4005C0EF9 /* CloudMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudMemo.xcdatamodel; sourceTree = "<group>"; };
+		3B34451820B96EE5005C0EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B34451B20B96EE5005C0EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B34451D20B96EE5005C0EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B34452220B96EE6005C0EF9 /* CloudMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B34452620B96EE6005C0EF9 /* CloudMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudMemoTests.swift; sourceTree = "<group>"; };
+		3B34452820B96EE6005C0EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B34452D20B96EE6005C0EF9 /* CloudMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B34453120B96EE6005C0EF9 /* CloudMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudMemoUITests.swift; sourceTree = "<group>"; };
+		3B34453320B96EE7005C0EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B34454020B96F9E005C0EF9 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NCMB.framework; path = Carthage/Build/iOS/NCMB.framework; sourceTree = "<group>"; };
+		3B34454320B970E8005C0EF9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3B34454520B970F6005C0EF9 /* AddMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoryViewController.swift; sourceTree = "<group>"; };
+		3B34454720B970FE005C0EF9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3B34454920BB7AE8005C0EF9 /* SVProgressHUD.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SVProgressHUD.framework.dSYM; path = Carthage/Build/iOS/SVProgressHUD.framework.dSYM; sourceTree = "<group>"; };
+		3B34454B20BB7B00005C0EF9 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B34450820B96EE3005C0EF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B34454C20BB7B00005C0EF9 /* SVProgressHUD.framework in Frameworks */,
+				3B34454120B96F9F005C0EF9 /* NCMB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B34451F20B96EE6005C0EF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B34452A20B96EE6005C0EF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B34450220B96EE3005C0EF9 = {
+			isa = PBXGroup;
+			children = (
+				3B34450D20B96EE3005C0EF9 /* CloudMemo */,
+				3B34452520B96EE6005C0EF9 /* CloudMemoTests */,
+				3B34453020B96EE6005C0EF9 /* CloudMemoUITests */,
+				3B34450C20B96EE3005C0EF9 /* Products */,
+				3B34453F20B96F9E005C0EF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B34450C20B96EE3005C0EF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B34450B20B96EE3005C0EF9 /* CloudMemo.app */,
+				3B34452220B96EE6005C0EF9 /* CloudMemoTests.xctest */,
+				3B34452D20B96EE6005C0EF9 /* CloudMemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B34450D20B96EE3005C0EF9 /* CloudMemo */ = {
+			isa = PBXGroup;
+			children = (
+				3B34450E20B96EE3005C0EF9 /* AppDelegate.swift */,
+				3B34451220B96EE4005C0EF9 /* Main.storyboard */,
+				3B34451820B96EE5005C0EF9 /* Assets.xcassets */,
+				3B34451A20B96EE5005C0EF9 /* LaunchScreen.storyboard */,
+				3B34451D20B96EE5005C0EF9 /* Info.plist */,
+				3B34451520B96EE4005C0EF9 /* CloudMemo.xcdatamodeld */,
+				3B34454320B970E8005C0EF9 /* ListViewController.swift */,
+				3B34454520B970F6005C0EF9 /* AddMemoryViewController.swift */,
+				3B34454720B970FE005C0EF9 /* DetailViewController.swift */,
+			);
+			path = CloudMemo;
+			sourceTree = "<group>";
+		};
+		3B34452520B96EE6005C0EF9 /* CloudMemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B34452620B96EE6005C0EF9 /* CloudMemoTests.swift */,
+				3B34452820B96EE6005C0EF9 /* Info.plist */,
+			);
+			path = CloudMemoTests;
+			sourceTree = "<group>";
+		};
+		3B34453020B96EE6005C0EF9 /* CloudMemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B34453120B96EE6005C0EF9 /* CloudMemoUITests.swift */,
+				3B34453320B96EE7005C0EF9 /* Info.plist */,
+			);
+			path = CloudMemoUITests;
+			sourceTree = "<group>";
+		};
+		3B34453F20B96F9E005C0EF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B34454B20BB7B00005C0EF9 /* SVProgressHUD.framework */,
+				3B34454920BB7AE8005C0EF9 /* SVProgressHUD.framework.dSYM */,
+				3B34454020B96F9E005C0EF9 /* NCMB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B34450A20B96EE3005C0EF9 /* CloudMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B34453620B96EE7005C0EF9 /* Build configuration list for PBXNativeTarget "CloudMemo" */;
+			buildPhases = (
+				3B34450720B96EE3005C0EF9 /* Sources */,
+				3B34450820B96EE3005C0EF9 /* Frameworks */,
+				3B34450920B96EE3005C0EF9 /* Resources */,
+				3B34454220B96FA4005C0EF9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudMemo;
+			productName = CloudMemo;
+			productReference = 3B34450B20B96EE3005C0EF9 /* CloudMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B34452120B96EE6005C0EF9 /* CloudMemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B34453920B96EE7005C0EF9 /* Build configuration list for PBXNativeTarget "CloudMemoTests" */;
+			buildPhases = (
+				3B34451E20B96EE6005C0EF9 /* Sources */,
+				3B34451F20B96EE6005C0EF9 /* Frameworks */,
+				3B34452020B96EE6005C0EF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B34452420B96EE6005C0EF9 /* PBXTargetDependency */,
+			);
+			name = CloudMemoTests;
+			productName = CloudMemoTests;
+			productReference = 3B34452220B96EE6005C0EF9 /* CloudMemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B34452C20B96EE6005C0EF9 /* CloudMemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B34453C20B96EE7005C0EF9 /* Build configuration list for PBXNativeTarget "CloudMemoUITests" */;
+			buildPhases = (
+				3B34452920B96EE6005C0EF9 /* Sources */,
+				3B34452A20B96EE6005C0EF9 /* Frameworks */,
+				3B34452B20B96EE6005C0EF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B34452F20B96EE6005C0EF9 /* PBXTargetDependency */,
+			);
+			name = CloudMemoUITests;
+			productName = CloudMemoUITests;
+			productReference = 3B34452D20B96EE6005C0EF9 /* CloudMemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B34450320B96EE3005C0EF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "倉田　隆成";
+				TargetAttributes = {
+					3B34450A20B96EE3005C0EF9 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					3B34452120B96EE6005C0EF9 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 3B34450A20B96EE3005C0EF9;
+					};
+					3B34452C20B96EE6005C0EF9 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 3B34450A20B96EE3005C0EF9;
+					};
+				};
+			};
+			buildConfigurationList = 3B34450620B96EE3005C0EF9 /* Build configuration list for PBXProject "CloudMemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B34450220B96EE3005C0EF9;
+			productRefGroup = 3B34450C20B96EE3005C0EF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B34450A20B96EE3005C0EF9 /* CloudMemo */,
+				3B34452120B96EE6005C0EF9 /* CloudMemoTests */,
+				3B34452C20B96EE6005C0EF9 /* CloudMemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B34450920B96EE3005C0EF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B34451C20B96EE5005C0EF9 /* LaunchScreen.storyboard in Resources */,
+				3B34451920B96EE5005C0EF9 /* Assets.xcassets in Resources */,
+				3B34451420B96EE4005C0EF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B34452020B96EE6005C0EF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B34452B20B96EE6005C0EF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B34454220B96FA4005C0EF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/NCMB.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B34450720B96EE3005C0EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B34450F20B96EE3005C0EF9 /* AppDelegate.swift in Sources */,
+				3B34454620B970F6005C0EF9 /* AddMemoryViewController.swift in Sources */,
+				3B34454820B970FE005C0EF9 /* DetailViewController.swift in Sources */,
+				3B34451720B96EE4005C0EF9 /* CloudMemo.xcdatamodeld in Sources */,
+				3B34454420B970E8005C0EF9 /* ListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B34451E20B96EE6005C0EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B34452720B96EE6005C0EF9 /* CloudMemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B34452920B96EE6005C0EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B34453220B96EE6005C0EF9 /* CloudMemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B34452420B96EE6005C0EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B34450A20B96EE3005C0EF9 /* CloudMemo */;
+			targetProxy = 3B34452320B96EE6005C0EF9 /* PBXContainerItemProxy */;
+		};
+		3B34452F20B96EE6005C0EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B34450A20B96EE3005C0EF9 /* CloudMemo */;
+			targetProxy = 3B34452E20B96EE6005C0EF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B34451220B96EE4005C0EF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B34451320B96EE4005C0EF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B34451A20B96EE5005C0EF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B34451B20B96EE5005C0EF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B34453420B96EE7005C0EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B34453520B96EE7005C0EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B34453720B96EE7005C0EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CloudMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.CloudMemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B34453820B96EE7005C0EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CloudMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.CloudMemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B34453A20B96EE7005C0EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CloudMemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.CloudMemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudMemo.app/CloudMemo";
+			};
+			name = Debug;
+		};
+		3B34453B20B96EE7005C0EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CloudMemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.CloudMemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudMemo.app/CloudMemo";
+			};
+			name = Release;
+		};
+		3B34453D20B96EE7005C0EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CloudMemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.CloudMemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CloudMemo;
+			};
+			name = Debug;
+		};
+		3B34453E20B96EE7005C0EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CloudMemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.CloudMemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CloudMemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B34450620B96EE3005C0EF9 /* Build configuration list for PBXProject "CloudMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B34453420B96EE7005C0EF9 /* Debug */,
+				3B34453520B96EE7005C0EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B34453620B96EE7005C0EF9 /* Build configuration list for PBXNativeTarget "CloudMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B34453720B96EE7005C0EF9 /* Debug */,
+				3B34453820B96EE7005C0EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B34453920B96EE7005C0EF9 /* Build configuration list for PBXNativeTarget "CloudMemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B34453A20B96EE7005C0EF9 /* Debug */,
+				3B34453B20B96EE7005C0EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B34453C20B96EE7005C0EF9 /* Build configuration list for PBXNativeTarget "CloudMemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B34453D20B96EE7005C0EF9 /* Debug */,
+				3B34453E20B96EE7005C0EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B34451520B96EE4005C0EF9 /* CloudMemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B34451620B96EE4005C0EF9 /* CloudMemo.xcdatamodel */,
+			);
+			currentVersion = 3B34451620B96EE4005C0EF9 /* CloudMemo.xcdatamodel */;
+			path = CloudMemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B34450320B96EE3005C0EF9 /* Project object */;
+}
